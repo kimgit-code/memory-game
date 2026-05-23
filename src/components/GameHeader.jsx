@@ -1,4 +1,4 @@
-export default function GameHeader({ score, moves }) {
+export default function GameHeader({ score, moves, endtheGame }) {
   return (
     <div className="game-header">
       <h1>🎮 Memory Card Game</h1>
@@ -12,6 +12,9 @@ export default function GameHeader({ score, moves }) {
           <span className="stat-value">{moves}</span>
         </div>
       </div>
+      <button className="reset-btn" onClick={endtheGame}>
+        New Game
+      </button>
     </div>
   );
 }
