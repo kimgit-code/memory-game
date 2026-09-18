@@ -37,7 +37,6 @@ export const useGameLogic = (cardValues) => {
   };
 
   //useEffect runs only when game starts using EMPTY dependency array
-
   useEffect(() => {
     initalizeGame();
   }, []);
